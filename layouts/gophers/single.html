@@ -1,0 +1,7 @@
+{{ partial "header.html" }}
+<div class="gopher">
+  <h2>{{ .Title }}</h2>
+  <h3>By <a href="{{ .Params.authorSite }}">{{ .Params.author }}</a></h3>
+  <img src="/images/gophers/{{ .File.TranslationBaseName }}.png" alt="{{ .Title }} by {{ .Author }}"/>
+</div>
+{{ partial "footer.html" }}

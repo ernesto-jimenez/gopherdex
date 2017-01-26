@@ -1,0 +1,12 @@
+{{ partial "header.html" }}
+<ul class="gophers">
+  {{ range where .Data.Pages.ByDate "Section" "gophers" }}
+  <li class="gopher">
+    <div>
+      <img src="/images/gophers/{{ .File.TranslationBaseName }}.png" alt="{{ .Title }} by {{ .Author }}"/>
+    </div>
+    <p><a href="{{ .Permalink }}">{{ .Title }}</a> by <a href="{{ .Params.authorSite }}">{{ .Params.author }}</a></p>
+  </li>
+  {{ end }}
+</ul>
+{{ partial "footer.html" }}

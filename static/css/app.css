@@ -1,0 +1,26 @@
+.gophers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gophers .gopher {
+  width: 32%;
+  margin: 5px;
+}
+
+.gophers .gopher div {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gophers .gopher p {
+  text-align: center;
+}
+
+.gophers img {
+  max-width: 100%;
+  max-height: 100%;
+}
