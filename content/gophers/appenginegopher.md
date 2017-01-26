@@ -5,3 +5,4 @@ author = "Renee French"
 authorSite = "http://reneefrench.blogspot.com/"
 +++
 
+Learn more about [the history of the Go gopher on golang blog](https://blog.golang.org/gopher).
