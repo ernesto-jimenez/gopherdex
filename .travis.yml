@@ -1,0 +1,15 @@
+language: go
+sudo: false
+
+matrix:
+    include:
+      - go: 1.7
+
+install:
+  - go get github.com/spf13/hugo
+  - go get github.com/ernesto-jimenez/linktest
+
+script:
+  - hugo -b /
+  - linktest
+
