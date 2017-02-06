@@ -1,19 +1,118 @@
-.gophers {
+html {font-size: 1em;}
+
+body {
+  background-color: white;
+  font-family: helvetica, arial, freesans, clean, sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.602em;
+}
+h2 {font-size: 1.424em;}
+h3 {font-size: 1.266em;}
+h4 {font-size: 1.125em;}
+small, .font_small {font-size: 0.889em;}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #375eab;
+}
+
+header {
+  width: 80%;
+  background-color: #E0EBF5;
+  padding: 15px 10%;
   display: flex;
   justify-content: space-between;
+}
+
+header h1 {
+  font-size: 22px;
+  line-height: 22px;
+}
+
+nav ul {
+  display: flex;
+  height: 22px;
+  line-height: 22px;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+footer {
+  width: 80%;
+  background-color: #f3f3f3;
+  padding: 15px 10%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  margin: 1em 0px;
+}
+
+.gophers {
+  max-width: 1410px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .gophers .gopher {
-  width: 32%;
+  width: 300px;
+  padding: 15px 0px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #cacaca;
+}
+
+.gophers .gopher p {
   margin: 5px;
 }
 
-.gophers .gopher div {
-  height: 300px;
+.gophers .gopher a.image {
+  height: 250px;
+  width: 250px;
+  padding: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #cacaca;
+  border-radius: 3px;
+}
+
+.gophers .gopher a:hover.image {
+  border: 1px solid #375eab;
 }
 
 .gophers .gopher p {
@@ -23,4 +122,36 @@
 .gophers img {
   max-width: 100%;
   max-height: 100%;
+}
+
+main {
+  max-width: 1410px;
+  padding: 20px;
+}
+
+main.gopher {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main.gopher aside {
+  width: 250px;
+  padding: 25px;
+  text-align: center;
+}
+
+main.gopher aside img {
+  max-width: 100%;
+}
+
+main.gopher h2 {
+  font-size: 3em;
+  margin: 10px 0px;
+}
+
+main.gopher h3 {
+  font-size: 2em;
+  margin: 10px 0px;
 }

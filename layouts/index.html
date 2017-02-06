@@ -1,12 +1,12 @@
-{{ partial "header.html" }}
+{{ partial "header.html" . }}
 <ul class="gophers">
   {{ range where .Data.Pages.ByDate "Section" "gophers" }}
   <li class="gopher">
-    <div>
+    <a class="image" href="{{ .RelPermalink }}">
       <img src="/images/gophers/{{ .File.TranslationBaseName }}.png" alt="{{ .Title }} by {{ .Author }}"/>
-    </div>
-    <p><a href="{{ .Permalink }}">{{ .Title }}</a> by <a href="{{ .Params.authorSite }}">{{ .Params.author }}</a></p>
+    </a>
+    <p><a href="{{ .RelPermalink }}">{{ .Title }}</a> by <a href="{{ .Params.credit }}">{{ .Params.author }}</a></p>
   </li>
   {{ end }}
 </ul>
-{{ partial "footer.html" }}
+{{ partial "footer.html" . }}

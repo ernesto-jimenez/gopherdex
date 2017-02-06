@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
   <head>
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/schema.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="{{ .Site.BaseURL }}">
-    <title>{{ .Site.Title }}</title>
+    <title>{{ .Title }}</title>
     <link rel="canonical" href="{{ .Permalink }}">
     <link rel="stylesheet" href="/css/reset.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="/css/app.css" type="text/css" charset="utf-8">
+    {{ if .RSSLink }}
     <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
   </head>
   <body lang="en">
     <header>
-      <h1>Gopherdex</h1>
+      <h1><a href="/">Gopher Gallery</a></h1>
+      <nav>
+        <ul>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="https://github.com/ernesto-jimenez/gopherdex">Github</a></li>
+        </ul>
+      </nav>
     </header>
