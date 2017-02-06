@@ -2,9 +2,9 @@
 <ul class="gophers">
   {{ range where .Data.Pages.ByDate "Section" "gophers" }}
   <li class="gopher">
-    <div>
+    <a class="image" href="{{ .Permalink }}">
       <img src="/images/gophers/{{ .File.TranslationBaseName }}.png" alt="{{ .Title }} by {{ .Author }}"/>
-    </div>
+    </a>
     <p><a href="{{ .Permalink }}">{{ .Title }}</a> by <a href="{{ .Params.authorSite }}">{{ .Params.author }}</a></p>
   </li>
   {{ end }}
