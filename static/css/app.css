@@ -90,7 +90,6 @@ footer p {
   border: 1px solid #375eab;
 }
 
-
 .gophers .gopher p {
   text-align: center;
 }
@@ -98,4 +97,32 @@ footer p {
 .gophers img {
   max-width: 100%;
   max-height: 100%;
+}
+
+main.gopher {
+  max-width: 1410px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+main.gopher aside {
+  height: 250px;
+  width: 250px;
+  padding: 25px;
+  text-align: center;
+}
+
+main.gopher aside img {
+  max-width: 100%;
+}
+
+main.gopher h2 {
+  font-size: 3em;
+  margin: 10px 0px;
+}
+
+main.gopher h3 {
+  font-size: 2em;
+  margin: 10px 0px;
 }
