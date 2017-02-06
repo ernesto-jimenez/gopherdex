@@ -1,13 +1,13 @@
-{{ partial "header.html" }}
+{{ partial "header.html" . }}
 <main class="gopher">
   <aside>
     <img src="/images/gophers/{{ .File.TranslationBaseName }}.png" alt="{{ .Title }} by {{ .Author }}"/>
   </aside>
   <section>
     <h2>{{ .Title }}</h2>
-    <h3>By <a href="{{ .Params.authorSite }}">{{ .Params.author }}</a></h3>
+    <h3>By <a href="{{ .Params.credit }}">{{ .Params.author }}</a></h3>
 
     {{ .Content }}
   </section>
 </main>
-{{ partial "footer.html" }}
+{{ partial "footer.html" . }}

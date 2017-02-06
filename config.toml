@@ -1,3 +1,4 @@
 baseurl = "https://gopher.gallery/"
 title = "Gopher Gallery - A collection of gopher drawings"
 languageCode = "en-us"
+googleAnalytics = "UA-91549201-1"
