@@ -1,3 +1,10 @@
+# Source for [gopher.gallery](https://gopher.gallery)
+
+A gallery of cute gophers from the Go programming language.
+
+[![Netlify](https://www.netlify.com/img/global/badges/netlify-dark.svg)](https://www.netlify.com)
+[![Build Status](https://travis-ci.org/ernesto-jimenez/gopherdex.svg?branch=master)](https://travis-ci.org/ernesto-jimenez/gopherdex)
+
 # Contributing a gopher to Gopherdex
 
 1. Fork the repository
@@ -31,5 +38,6 @@ license*
 You will need to install [hugo][hugo] to genereate the website.
 
 After cloning the site, you can make changes and monitor the result with `hugo server`.
+
 
 [hugo]: https://gohugo.io/
