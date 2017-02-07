@@ -17,11 +17,14 @@ date = "2017-01-26T15:50:35Z"
 title = "The original gopher"
 author = "Renee French"
 credit = "http://reneefrench.blogspot.com/"
+license = "Creative Commons Attributions 3.0"
 +++
 
+Some history about this actual gopher.
 ```
 
-*Make sure you specify the current date and the name of the author*
+*Make sure you specify the current date, the name of the author, and the
+license*
 
 # Contributing to the design
 
