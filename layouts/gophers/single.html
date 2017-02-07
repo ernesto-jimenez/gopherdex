@@ -8,6 +8,7 @@
     <h3>By <a href="{{ .Params.credit }}">{{ .Params.author }}</a></h3>
 
     {{ .Content }}
+    <p>License: {{ .Params.license }}</p>
   </section>
 </main>
 {{ partial "footer.html" . }}
